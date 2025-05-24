@@ -1,0 +1,42 @@
+# Ignore common secrets
+*.pem
+*.key
+*.crt
+*.asc
+*.gpg
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore specific local files
+!.bashrc
+!.zshrc
+!.config/
+!.profile
+!.vimrc
+!.tmux.conf
+!.gitconfig
+!.aliases
+!.functions
+
+# Example: Ignore local-only configs
+.localrc
+.env
+.npmrc
+.python_history
+.ssh/
+.gnupg/
+.netrc
+
+# Ignore backup and temp files
+*~
+*.swp
+*.swo
+*.bak
+
+google-chrome/*
+Slack/*
+
+.cache
+Code - OSS/*

@@ -1,0 +1,22 @@
+[username]
+show_always = true
+style_user = "bold blue"
+style_root = "bold red"
+format = ' [$user]($style) '
+
+[hostname]
+ssh_only = false
+format = 'on [$hostname](bold yellow) '
+
+[directory]
+truncation_symbol = ".../"
+truncate_to_repo = false
+home_symbol = "~"  # Or try something like , 󰋜, , 🏡
+style = "bold cyan"
+format = "[󰣇](bold blue)  [$path]($style) "
+
+
+[python]
+symbol = "  "
+# Or use a Nerd Font symbol like
+# symbol = ""  # Nerd Font python icon

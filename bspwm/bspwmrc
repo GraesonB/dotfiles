@@ -1,0 +1,33 @@
+#!/bin/sh
+
+bspc config window_gap         12
+bspc config top_padding        0
+bspc config bottom_padding     0
+bspc config left_padding       0
+bspc config right_padding      0
+
+# desktops
+bspc monitor -d '`' 1 2 3 4 5 6 7 8 9 q w e r
+
+# Start sxhkd (keybindings)
+sxhkd &
+
+# Set wallpaper
+feh --bg-fill ~/pictures/totoro.jpg
+# nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv --hwdec=auto -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --panscan="1.0" --loop /home/graeson/pictures/totoro_1440p.mp4 &
+
+# Start a compositor (transparency & vsync)
+picom --config ~/.config/picom/picom.conf &
+
+# Start a terminal on launch
+alacritty &
+
+# Set keyobard layout
+setxkbmap us &
+
+# Start a bar
+eww daemon
+eww open top-bar &
+
+# dunst
+dunst &

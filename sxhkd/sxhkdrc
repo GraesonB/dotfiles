@@ -1,0 +1,69 @@
+# Open Rofi
+super + d
+	rofi -show drun
+
+# Open alacritty
+super + Return
+	alacritty
+
+# Close window
+super + Escape
+	bspc node -c
+
+# Open Chrome
+super + c
+	google-chrome-stable
+
+# Open xplr
+super + period
+    bspc node -p west; alacritty --class xplrterm -e xplr
+
+# Focus window in a direction
+super + Delete
+	bspc node -f west
+super + Page_Down
+	bspc node -f east
+super + Home
+	bspc node -f north
+super + End
+	bspc node -f south
+
+# Switch to home
+super + grave
+	bspc desktop -f '`'
+
+# Code desktops
+super + q
+	bspc desktop -f q
+
+super + w
+	bspc desktop -f w
+
+super + e
+	bspc desktop -f e
+
+super + r
+	bspc desktop -f r
+
+# Switch to desktop {1-9}
+super + {1-9}
+	bspc desktop -f {1-9}
+
+# Send home
+super + shift + grave
+	bspc node -d '`'
+
+
+# Move focused window to desktop qwer
+super + shift + q
+	bspc node -d q
+
+super + shift + w
+	bspc node -d w
+
+super + shift + e
+	bspc node -d e
+
+super + shift + r
+	bspc node -d r
+

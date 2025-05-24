@@ -1,0 +1,17 @@
+(defpoll time :interval "5s"
+  `date +'{"hour": "%H", "min": "%M"}'`)
+
+(defwidget top-bar-widget []
+  (box
+    :class "bar"
+    (label :text "${time.hour}:${time.min}"))
+)
+
+(defwindow top-bar
+  :windowtype "dock"
+  :reserve (struts :distance "30px" :side "top")
+  :geometry (geometry
+    :stacking "fg"
+    :width "100%"
+    :height 30)
+  (top-bar-widget))

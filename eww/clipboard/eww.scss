@@ -1,0 +1,30 @@
+/* ~/.config/eww/eww.scss  */
+/* ---------------------------------------------------------- */
+$bg: #222;
+$fg: #eee;
+$accent: #444;
+
+.bar {
+  background-color: $bg;
+  color: $fg;
+  padding: 4px 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+}
+
+/* Clock */
+.time {
+  font-weight: bold;
+}
+
+/* Logout button */
+.logout-btn {
+  background: $accent;
+  border-radius: 6px;
+  padding: 2px 10px;
+  transition: background 120ms ease;
+
+  &:hover { background: lighten($accent, 15%); }
+  &:active { background: lighten($accent, 25%); }
+}
+
