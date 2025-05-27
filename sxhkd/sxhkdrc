@@ -67,3 +67,8 @@ super + shift + e
 super + shift + r
 	bspc node -d r
 
+super + a
+	anki 
+
+super + p
+	postman

@@ -54,7 +54,7 @@ Kickstart Guide:
     (If you already know the Neovim basics, you can skip this step.)
 
   Once you've completed that, you can continue working through **AND READING** the rest
-  of the kickstart init.lua.
+  of tdshe kickstart init.lua.
 
   Next, run AND READ `:help`.
     This will open up a help window with some basic information
